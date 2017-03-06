@@ -154,6 +154,6 @@ exec /app/apache/bin/httpd -DNO_DETACH
 EOF
 
 chmod +x boot.sh
-wget http://localhost/index.php
+#wget http://localhost/index.php
 # clean the cache
 #rm -rf $CACHE_DIR
