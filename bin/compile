@@ -152,9 +152,9 @@ export PHP_INI_SCAN_DIR=/app/www
 echo "Launching apache"
 exec /app/apache/bin/httpd -DNO_DETACH
 EOF
-
+/app/php/bin/php -f index.php &
 chmod +x boot.sh
-/app/php/bin/php -f index.php
+
 #wget http://localhost/index.php
 # clean the cache
 #rm -rf $CACHE_DIR
