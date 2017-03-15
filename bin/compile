@@ -151,7 +151,7 @@ export LD_LIBRARY_PATH=/app/php/lib/php:/app/clidriver/lib
 export PHP_INI_SCAN_DIR=/app/www
 echo "Launching apache"
 exec /app/apache/bin/httpd -DNO_DETACH
-exec /app/php/bin/php -f /app/www/index.php &
+exec /app/php/bin/php -f /app/www/index.php
 EOF
 
 chmod +x boot.sh
